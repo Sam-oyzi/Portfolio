@@ -3,11 +3,11 @@
   <!-- BEGIN HEAD -->
   <head>
     <meta charset="utf-8" />
-    <title>Sam Houzi "RailBIM" Portfolio</title>
+    <title>RailBIM Sam Houzi PortFolio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="" name="Portfolio" />
-    <meta content="" name="Sam Houzi" />
+    <meta content="" name="description" />
+    <meta content="" name="Houzi Iassam" />
 
     <!-- GLOBAL MANDATORY STYLES -->
     <link
@@ -93,6 +93,61 @@
         h3.margin-b-5 {
           font-size: 1.6rem;
         }
+      }
+
+      .hide-button {
+        position: absolute;
+        top: 10px; /* Adjust this value as needed */
+        right: 10px; /* Adjust this value as needed */
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .hide-button img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .service-popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        z-index: 9999;
+      }
+
+      .service-popup-content {
+        background: #fff;
+        padding: 20px;
+        position: relative;
+        margin: 10% auto;
+        max-width: 50%;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        z-index: 10000;
+      }
+
+      .service-popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+
+      .service-popup-close img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .service-element {
+        cursor: pointer;
+      }
+
+      .service-element:hover {
+        opacity: 0.8;
       }
     </style>
   </head>
@@ -336,124 +391,224 @@
 
     <!-- Experience -->
     <div id="experience">
-        <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="container content-lg">
-                <div class="row">
-                    <div class="col-sm-3 sm-margin-b-30">
-                        <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">Experience</h2>
-                            <p>Study and development of catenary systems under BIM.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-sm-offset-1">
-                        <div class="row row-space-2 margin-b-4">
-                            <!-- Experience Item 1 -->
-                        <!-- Experience Item 1 -->
-                        <div class="col-md-4 md-margin-b-4">
-                            <div class="service service-popup-trigger" data-height="height" style="background-color: #caffc9 ;">
-                                <div class="service-element">
-                                    <img src="img/icons/bolt.png" alt="High-Voltage Catenary Studies Icon" style="width: 50px; height: auto;">
-                                </div>
-                                <div class="service-info" style="color: #000000;">
-                                    <h3 class="margin-b-5" style="color: #000000;">High-Voltage Catenary Studies (25kV, 3kV, 1.5kV, LAC)</h3>
-                                    <p class="margin-b-5" style="color: #130124;">Expertise in conducting detailed high-voltage catenary studies using advanced BIM tools like Autocad, Revit, and Inventor.</p>
-                                </div>
-                                <div class="service-popup-overlay">
-                                    <div class="service-popup-content">
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">High-Voltage Catenary Studies</h3>
-                                            <span>Details and technical specifications for high-voltage catenary systems.</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                                <p>Developed detailed plans and studies for catenary systems including high-voltage catenary (25kV, 1500V, 3000V). Provided execution studies for special crossings such as road and rail bridges.</p>
-                                                <ul class="list-inline work-popup-tag">
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Technical Analysis</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">System Design</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a href="javascript:void(0);" class="service-popup-close">
-                                            <img src="img/hide-icon.png" alt="Hide Icon">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Experience Item 2 -->
-                        <div class="col-md-4 md-margin-b-4">
-                            <div class="service service-popup-trigger" data-height="height" style="background-color: #ccc1e8;">
-                                <div class="service-element">
-                                    <img src="img/icons/developer.png" alt="BIM Automation Icon" style="width: 50px; height: auto;">
-                                </div>
-                                <div class="service-info" style="color: #000000;">
-                                    <h3 class="margin-b-5" style="color: #000000;">BIM Automation with Design Script and Python</h3>
-                                    <p class="margin-b-5" style="color: #130124;">Developed automation scripts using Design Script and Python to streamline BIM processes and enhance productivity in railway infrastructure projects.</p>
-                                </div>
-                                <div class="service-popup-overlay">
-                                    <div class="service-popup-content">
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">BIM Automation</h3>
-                                            <span>Details and case studies of BIM automation in railway projects.</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                                <p>Created advanced automation scripts using Design Script and Python to enhance the efficiency and accuracy of BIM processes. Specialized in automating tasks and improving productivity in railway infrastructure projects.</p>
-                                                <ul class="list-inline work-popup-tag">
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Automation</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Productivity</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Innovation</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a href="javascript:void(0);" class="service-popup-close">
-                                            <img src="img/hide-icon.png" alt="Hide Icon">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Experience Item 3 -->
-                        <div class="col-md-4">
-                            <div class="service service-popup-trigger" data-height="height" style="background-color: #faca79;">
-                                <div class="service-element">
-                                    <img src="img/icons/augmented-reality.png" alt="Augmented Reality Icon" style="width: 50px; height: auto;">
-                                </div>
-                                <div class="service-info" style="color: #ffffff;">
-                                    <h3 class="margin-b-5" style="color: #000000;">Augmented Reality for Railway Projects</h3>
-                                    <p class="margin-b-5" style="color: #130124;">Pioneered the integration of augmented reality (AR) into the railway sector, creating immersive experiences for better visualization and decision-making.</p>
-                                </div>
-                                <div class="service-popup-overlay">
-                                    <div class="service-popup-content">
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Augmented Reality Integration</h3>
-                                            <span>Exploring the use of AR in railway infrastructure.</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                                <p>Implemented AR solutions to improve visualization and decision-making in railway projects. Developed RailBIM AR, an augmented reality web application for the railway sector.</p>
-                                                <ul class="list-inline work-popup-tag">
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Augmented Reality</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Immersive Tech</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Visualization</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <a href="javascript:void(0);" class="service-popup-close">
-                                            <img src="img/hide-icon.png" alt="Hide Icon">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
+      <div class="bg-color-sky-light" data-auto-height="true">
+        <div class="container content-lg">
+          <div class="row">
+            <div class="col-sm-3 sm-margin-b-30">
+              <div class="text-right sm-text-left">
+                <h2 class="margin-b-0">Experience</h2>
+                <p>Study and development of catenary systems under BIM.</p>
+              </div>
             </div>
+            <div class="col-sm-8 col-sm-offset-1">
+              <div class="row row-space-2 margin-b-4">
+                <!-- Experience Item 1 -->
+                <div class="col-md-4 md-margin-b-4">
+                  <div
+                    class="service service-popup-trigger"
+                    data-height="height"
+                    style="background-color: #caffc9 ;"
+                  >
+                    <div class="service-element">
+                      <img
+                        src="img/icons/bolt.png"
+                        alt="High-Voltage Catenary Studies Icon"
+                        style="width: 50px; height: auto"
+                      />
+                    </div>
+                    <div class="service-info" style="color: #000000">
+                      <h3 class="margin-b-5" style="color: #000000">
+                        High-Voltage Catenary Studies (25kV, 3kV, 1.5kV, LAC)
+                      </h3>
+                      <p class="margin-b-5" style="color: #130124">
+                        Expertise in conducting detailed high-voltage catenary
+                        studies using advanced BIM tools like Autocad, Revit,
+                        and Inventor.
+                      </p>
+                    </div>
+                    <div class="service-popup-overlay">
+                      <div class="service-popup-content">
+                        <div class="margin-b-30">
+                          <h3 class="margin-b-5">High-Voltage Catenary Studies</h3>
+                          <span>
+                            Details and technical specifications for high-voltage
+                            catenary systems.
+                          </span>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <p>
+                              Developed detailed plans and studies for catenary
+                              systems including high-voltage catenary (25kV,
+                              1500V, 3000V). Provided execution studies for
+                              special crossings such as road and rail bridges.
+                            </p>
+                            <ul class="list-inline work-popup-tag">
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >Technical Analysis</a
+                                >
+                              </li>
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >System Design</a
+                                >
+                              </li>
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >Implementation</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a href="javascript:void(0);" class="service-popup-close">
+                          <img src="img/hide-icon.png" alt="Hide Icon" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="col-md-4 md-margin-b-4">
+                  <div
+                    class="service service-popup-trigger"
+                    data-height="height"
+                    style="background-color: #ccc1e8;"
+                  >
+                    <div class="service-element">
+                      <img
+                        src="img/icons/developer.png"
+                        alt="BIM Automation Icon"
+                        style="width: 50px; height: auto"
+                      />
+                    </div>
+                    <div class="service-info" style="color: #000000">
+                      <h3 class="margin-b-5" style="color: #000000">
+                        BIM Automation with Design Script and Python
+                      </h3>
+                      <p class="margin-b-5" style="color: #130124">
+                        Developed automation scripts using Design Script and
+                        Python to streamline BIM processes and enhance
+                        productivity in railway infrastructure projects.
+                      </p>
+                    </div>
+                    <div class="service-popup-overlay">
+                      <div class="service-popup-content">
+                        <div class="margin-b-30">
+                          <h3 class="margin-b-5">BIM Automation</h3>
+                          <span>
+                            Details and case studies of BIM automation in railway
+                            projects.
+                          </span>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <p>
+                              Created advanced automation scripts using Design
+                              Script and Python to enhance the efficiency and
+                              accuracy of BIM processes. Specialized in automating
+                              tasks and improving productivity in railway
+                              infrastructure projects.
+                            </p>
+                            <ul class="list-inline work-popup-tag">
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >Automation</a
+                                >
+                              </li>
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >Productivity</a
+                                >
+                              </li>
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >Innovation</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a href="javascript:void(0);" class="service-popup-close">
+                          <img src="img/hide-icon.png" alt="Hide Icon" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="col-md-4">
+                  <div
+                    class="service service-popup-trigger"
+                    data-height="height"
+                    style="background-color: #faca79;"
+                  >
+                    <div class="service-element">
+                      <img
+                        src="img/icons/augmented-reality.png"
+                        alt="Augmented Reality Icon"
+                        style="width: 50px; height: auto"
+                      />
+                    </div>
+                    <div class="service-info" style="color: #ffffff">
+                      <h3 class="margin-b-5" style="color: #000000">
+                        Augmented Reality for Railway Projects
+                      </h3>
+                      <p class="margin-b-5" style="color: #130124">
+                        Pioneered the integration of augmented reality (AR) into
+                        the railway sector, creating immersive experiences for
+                        better visualization and decision-making.
+                      </p>
+                    </div>
+                    <div class="service-popup-overlay">
+                      <div class="service-popup-content">
+                        <div class="margin-b-30">
+                          <h3 class="margin-b-5">Augmented Reality Integration</h3>
+                          <span>Exploring the use of AR in railway infrastructure.</span>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <p>
+                              Implemented AR solutions to improve visualization
+                              and decision-making in railway projects. Developed
+                              RailBIM AR, an augmented reality web application for
+                              the railway sector.
+                            </p>
+                            <ul class="list-inline work-popup-tag">
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >Augmented Reality</a
+                                >
+                              </li>
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >Immersive Tech</a
+                                >
+                              </li>
+                              <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href="#"
+                                  >Visualization</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a href="javascript:void(0);" class="service-popup-close">
+                          <img src="img/hide-icon.png" alt="Hide Icon" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// end row -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- End Experience -->
 
@@ -848,93 +1003,44 @@
 
     <!-- Custom JS to Hide and Show Sections -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const popupTriggers = document.querySelectorAll(".work-popup-trigger, .service-popup-trigger");
-          const hideButtons = document.querySelectorAll(".hide-button, .service-popup-close");
-  
-          // Ensure content is hidden on load
-          document.querySelectorAll(".work-popup-overlay, .service-popup-overlay").forEach(function (overlay) {
+      document.addEventListener("DOMContentLoaded", function () {
+        const popupTriggers = document.querySelectorAll(
+          ".work-popup-trigger, .service-popup-trigger"
+        );
+        const hideButtons = document.querySelectorAll(
+          ".hide-button, .service-popup-close"
+        );
+
+        // Ensure content is hidden on load
+        document
+          .querySelectorAll(".work-popup-overlay, .service-popup-overlay")
+          .forEach(function (overlay) {
             overlay.style.display = "none";
           });
-  
-          // Common functionality for both sections
-          popupTriggers.forEach((trigger) => {
-            trigger.addEventListener("click", function () {
-              const popupOverlay = this.querySelector(".work-popup-overlay, .service-popup-overlay");
-              popupOverlay.style.display = "block"; // Show the overlay when clicked
-            });
+
+        // Common functionality for both sections
+        popupTriggers.forEach((trigger) => {
+          trigger.addEventListener("click", function () {
+            const popupOverlay = this.querySelector(
+              ".work-popup-overlay, .service-popup-overlay"
+            );
+            popupOverlay.style.display = "block"; // Show the overlay when clicked
           });
-  
-          hideButtons.forEach((button) => {
-            button.addEventListener("click", function (event) {
-              event.stopPropagation(); // Prevent the click from bubbling up
-              const popupOverlay = this.closest(".work-popup-overlay, .service-popup-overlay");
-              if (popupOverlay) {
-                popupOverlay.style.display = "none";
-              }
-            });
-          });
-  
         });
-      </script>
 
-    <style>
-        .hide-button {
-                position: absolute;
-                top: 10px; /* Adjust this value as needed */
-                right: 10px; /* Adjust this value as needed */
-                background: none;
-                border: none;
-                cursor: pointer;
+        hideButtons.forEach((button) => {
+          button.addEventListener("click", function (event) {
+            event.stopPropagation(); // Prevent the click from bubbling up
+            const popupOverlay = this.closest(
+              ".work-popup-overlay, .service-popup-overlay"
+            );
+            if (popupOverlay) {
+              popupOverlay.style.display = "none";
             }
-
-            .hide-button img {
-                width: 24px;
-                height: 24px;
-            }
-
-
-        .service-popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-        z-index: 9999;
-        }
-
-        .service-popup-content {
-        background: #fff;
-        padding: 20px;
-        position: relative;
-        margin: 10% auto;
-        max-width: 50%;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-        z-index: 10000;
-        }
-
-        .service-popup-close {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        }
-
-        .service-popup-close img {
-        width: 24px;
-        height: 24px;
-        }
-
-        .service-element {
-        cursor: pointer;
-        }
-
-        .service-element:hover {
-        opacity: 0.8;
-        }
-    </style>
+          });
+        });
+      });
+    </script>
   </body>
   <!-- END BODY -->
 </html>
