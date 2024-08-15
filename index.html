@@ -875,20 +875,23 @@
             });
           });
   
-          // Set the initial size of hide icons to avoid size issues
-          document.querySelectorAll(".hide-button img, .service-popup-close img").forEach(function (img) {
-            img.style.width = "24px";
-            img.style.height = "auto";
-          });
         });
       </script>
 
     <style>
-        .hide-button img {
-            width: 24px;
-            height: auto;
-            display: block; /* Ensure it loads with the correct size */
-        }
+        .hide-button {
+                position: absolute;
+                top: 10px; /* Adjust this value as needed */
+                right: 10px; /* Adjust this value as needed */
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+
+            .hide-button img {
+                width: 24px;
+                height: 24px;
+            }
 
 
         .service-popup-overlay {
@@ -901,7 +904,7 @@
         background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
         z-index: 9999;
         }
-    
+
         .service-popup-content {
         background: #fff;
         padding: 20px;
@@ -911,23 +914,23 @@
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
         z-index: 10000;
         }
-    
+
         .service-popup-close {
         position: absolute;
         top: 10px;
         right: 10px;
         cursor: pointer;
         }
-    
+
         .service-popup-close img {
         width: 24px;
         height: 24px;
         }
-    
+
         .service-element {
         cursor: pointer;
         }
-    
+
         .service-element:hover {
         opacity: 0.8;
         }
